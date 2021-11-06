@@ -58,8 +58,8 @@ async function getImages(type, num) {
     document.querySelector(".error").classList.add("appear-error");
   }
 }
-// first call
-getImages("car", 3);
+// first call with tag car and random number
+getImages("car", Math.random() * 100);
 
 // dispay images
 function displayImages(photo) {
